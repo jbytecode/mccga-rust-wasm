@@ -1,0 +1,16 @@
+[package]
+name = "mccga-wasm"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+mccga = "0.1.6"
+getrandom = { version = "0.2", features = ["js"] }
+web-sys = { version = "0.3.103", features = ["console"] }
+wasm-bindgen = "0.2.126"
+
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+
